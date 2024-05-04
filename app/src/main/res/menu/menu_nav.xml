@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/item_allOrder"
+            android:title="All Orders"
+            android:icon="@drawable/ic_list"/>
+        <item android:id="@+id/item_allUser"
+            android:title="All Users"
+            android:icon="@drawable/ic_person"/>
+        <item android:id="@+id/item_allCar"
+            android:title="All Cars"
+            android:icon="@drawable/ic_car"/>
+    </group>
+    <item android:title="Other">
+        <menu>
+            <item android:id="@+id/item_thongke"
+                android:title="Thống kê"
+                android:icon="@drawable/ic_chart"/>
+            <item android:id="@+id/item_account"
+                android:title="Account"
+                android:icon="@drawable/ic_account"/>
+            <item android:id="@+id/item_signout"
+                android:title="Đăng xuất"
+                android:icon="@drawable/ic_signout"/>
+        </menu>
+    </item>
+</menu>

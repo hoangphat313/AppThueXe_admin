@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.DetailCarActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbardetailcar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/green"
+        app:navigationIcon="@drawable/ic_arrow_back_white"
+        app:titleTextColor="@color/white"
+        app:title="Chi tiết xe" />
+    <ScrollView
+        android:layout_weight="2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/vpg_detailcar"
+                android:layout_width="match_parent"
+                android:layout_height="350dp"
+                android:contentDescription="@string/app_name"
+                android:padding="10dp" />
+            <TextView
+                android:text="Tên xe"
+                android:id="@+id/tv_namecar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:padding="15dp"/>
+            <TextView
+                android:id="@+id/tv_pricecar"
+                android:text="100.000 Đ"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="15dp"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:textColor="@color/red"/>
+
+            <TextView
+                android:id="@+id/tv_typecar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:text="Loại xe: Số tự động"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/tv_statuscar"
+                android:text="Tình trạng: Còn trống"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:padding="15dp"/>
+            <TextView
+                android:text="Mô tả:"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="15dp"
+                android:textSize="20dp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:id="@+id/tv_describebook"
+                android:text=""
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="15dp"
+                android:textSize="20dp"
+                android:textColor="@color/black"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

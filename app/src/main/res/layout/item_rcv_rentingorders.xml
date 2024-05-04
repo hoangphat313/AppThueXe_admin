@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="20dp"
+    android:background="@drawable/border_itemrcvallcars"
+    android:padding="5dp"
+    android:orientation="vertical">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardCornerRadius="20dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@drawable/border_bottom">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="9"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/tv_username"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tên người dùng"
+                        android:singleLine="true"
+                        android:textSize="25sp"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:id="@+id/tv_orderdate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Order date: 09-07-2023"
+                        android:textSize="15sp"/>
+                    <TextView
+                        android:id="@+id/tv_orderID"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="OrderID: nh2347nsn3o34n127645"
+                        android:textSize="15sp"/>
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/tv_orderstatus"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:gravity="center"
+                    android:text="Đang thuê"
+                    android:textSize="15sp"
+                    android:textColor="#6b6b6b"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:padding="15dp"
+                android:orientation="vertical"
+                android:background="@drawable/border_bottom">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:text="Ngày nhận xe:"
+                        android:textSize="17sp"/>
+                    <TextView
+                        android:id="@+id/tv_rentdate"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:text="09-07-2023"
+                        android:textSize="17sp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:text="Ngày trả xe:"
+                        android:textSize="17sp"/>
+                    <TextView
+                        android:id="@+id/tv_returndate"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:text="09-07-2023"
+                        android:textSize="17sp"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:padding="15dp"
+                android:orientation="vertical"
+                android:background="@drawable/border_bottom">
+                <TextView
+                    android:id="@+id/tv_namecar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="MAZDA 3 2017"
+                    android:textSize="17sp"
+                    android:textStyle="bold"
+                    android:textColor="#6b6b6b"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+                    <TextView
+                        android:id="@+id/tv_typecar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Loại xe: Xe có tài xế"
+                        android:textSize="15sp"
+                        android:textColor="#6b6b6b"/>
+                    <TextView
+                        android:id="@+id/tv_pricecar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Giá: 100.000 VNĐ/Ngày"
+                        android:textSize="15sp"
+                        android:textColor="#6b6b6b"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+                    <TextView
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:text="Tổng tiền: "
+                        android:textStyle="bold"
+                        android:textSize="15sp"/>
+                    <TextView
+                        android:id="@+id/tv_totalprice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="999.999 VNĐ"
+                        android:textStyle="bold"
+                        android:textColor="@color/red"
+                        android:textSize="15sp"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/ConstraintLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:padding="15dp">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_viewdetail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:background="@drawable/border_viewdetail"
+                    android:minHeight="48dp"
+                    android:text="View Detail"
+                    android:textColor="@color/yellow"
+                    android:textSize="11sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_acceptorder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:background="@drawable/solid_green"
+                    android:minHeight="48dp"
+                    android:text="Trả xe"
+                    android:textColor="@color/white"
+                    android:textSize="11sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_margin="20dp">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="THÔNG BÁO"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:padding="7dp"
+        android:background="@drawable/border_bottom_white2"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="10dp"
+        android:text="Có chắc muốn hủy háo đơn này!!!"
+        android:textSize="17sp"
+        android:gravity="center"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_cancel"
+            android:layout_width="130dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/solid_black"
+            android:text="Hủy"
+            android:textColor="@color/white"
+            android:textStyle="bold"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_confirm"
+            android:layout_width="130dp"
+            android:layout_height="30dp"
+            android:background="@drawable/solid_green"
+            android:text="Xác thực"
+            android:textColor="@color/white"
+            android:textStyle="bold"/>
+    </LinearLayout>
+</LinearLayout>
